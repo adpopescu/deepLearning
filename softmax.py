@@ -3,11 +3,7 @@ scores = [3.0, 1.0, 0.2]
 import numpy as np
 
 def softmax(x):
-    tot = np.sum(x)
-    for y in range (0, len(x)):
-        x[y] = x[y]/tot
-
-    return x
+    return np.exp(x)/np.sum(np.exp(x), axis=0)
 
 print(softmax(scores))
 
