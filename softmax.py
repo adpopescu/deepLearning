@@ -1,4 +1,5 @@
-scores = [3.0, 1.0, 0.2]
+mult = 0.10
+scores = [3.0 * mult, 1.0 * mult, 0.2 * mult]
 
 import numpy as np
 
